@@ -28,7 +28,7 @@ class FontAwesome::Rails::IconHelperTest < ActionView::TestCase
   test "#fa_icon should dasherize icon names" do
     assert_icon i("fa fa-building-o"),                  ["building_o"]
     assert_icon i("fa fa-building-o"),                  [:building_o]
-    assert_icon i("fa fa-building-o fixed_width"),      [:building_o, :fixed_width]
+    assert_icon i("fa fa-building-o fa-fixed-width"),      [:building_o, :fixed_width]
   end
 
   test "#fa_icon should incorporate additional class styles" do
